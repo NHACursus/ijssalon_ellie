@@ -44,15 +44,25 @@ def laag_en_hoog(mijn_lijst = []):
 
 
 # Lesson 8 question 9 and 10
+'''
+def gemiddelde(mijn_lijst = []):
+  aantal = len(mijn_lijst)
+  totaal = 0
+  for element in mijn_lijst:
+   totaal += element
+   gemiddelde = totaal / totaal
+  return f"De gemiddelde inkomsten deze week zijn {str(gemiddelde)} euro."
+'''
 def gemiddelde(mijn_lijst = []):
     length = len(mijn_lijst) 
-    sum = sum(mijn_lijst) 
-    average = sum / length 
+    som = sum(mijn_lijst) 
+    average = som / length 
     return (f"De gemiddelde inkomsten deze week zijn {str(average)} euro.")
 
-# list_gemiddelde = [220, 430, 125, 160, 205, 90, 345]    
-# print( gemiddelde(list_gemiddelde) )
-# print()
+
+list_gemiddelde = [220, 430, 125, 160, 205, 90, 345]    
+print( gemiddelde(list_gemiddelde) )
+print()
 
 
 # lesson 8 question 11

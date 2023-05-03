@@ -10,8 +10,21 @@ def mijn_functie_1(int_a):
 
 
 # Lesson 8 question 3
+def mijn_functie_2(a, b):
+ 
+   thislist = []
+   thislist.append(int(a + b))     # [0] = int(a + b)
+   thislist.append(int(a - b))     # [1] = int(a - b)
+   thislist.append(int(a * b))     # [2] = int(a * b)
+   thislist.append(int(a / b))     # [3] = int(a / b) 
+   return thislist 
+
+print( mijn_functie_2(100, 20) )
+
+
+
+'''
 def mijn_functie_2(float_a):
-   thislist = [0, 0, 0, 0]
    txt = str(float_a)
    x = txt.split('.', 2)
    a = int(x[0])
@@ -20,11 +33,12 @@ def mijn_functie_2(float_a):
    if len(str(a)) > 2:
        b = b * 10
 
-   thislist[0] = int(a + b)
-   thislist[1] = int(a - b)
-   thislist[2] = int(a * b)
-   thislist[3] = int(a / b) 
+   thislist = []
+   thislist.append(a + b)     # [0] = int(a + b)
+   thislist.append(a - b)     # [1] = int(a - b)
+   thislist.append(a * b)     # [2] = int(a * b)
+   thislist.append(a / b)     # [3] = int(a / b) 
    return thislist 
 
-# print( mijn_functie_2((100.20)) )
-
+print( mijn_functie_2((100.20)) )
+'''
