@@ -1,3 +1,4 @@
+
 def decoreer( tekst = "" ):
    # tekst = "header"
     lengte = len(tekst) + 4
@@ -17,35 +18,32 @@ def fooi_pp(bedrag = int, personen = int):
         bedrag_pp = "??"    
   return f"Het bedrag per persoon is {bedrag_pp} euro"
  
-  
-b = int(input("Welk bedrag zit er in de fooienpot? "))
-p = int(input("Over hoeveel mensen moet de pot verdeeld worden? "))
-
-print( fooi_pp(b, p) )
-
-
-
-
-
-
-'''
-def tryparse(divide, by):
-    try:
-        return True, divide / by #string, base     #int(string, base=base)
-    except ValueError:
-        return False, None
-
-i = 1
-while i < 6:
-  print(tryparse(0,i))
-  i += 1
+''' 
+ b = int(input("Welk bedrag zit er in de fooienpot? "))
+ p = int(input("Over hoeveel mensen moet de pot verdeeld worden? "))
+ print( fooi_pp(b, p) )
 '''
 
+# Lesson 10 question 1
+def onderstreep(tekst = ""):
+      uit = []
+      uit.append(tekst)
+      uit.append(len(tekst) * "=")   
+      return uit
 
-# fruits = ["apple", "banana", "cherry"]
-# for x > 10:
-#  print(x)
+# 10.11 homework assignments question 1
+def som(dict):
+  i = 0
+  for item in dict:  
+       i = i + (dict[item])
+  return i
 
+'''
+def som(dict):
+     i = 0
+     for k, v in dict.items():  
+      i = i + v
 
-#for i < 10
-#print( tryparse(0, 1))    
+      return i
+     
+'''
